@@ -29,18 +29,18 @@ int main()
 	switch (przypadek)
 	{
 	case 1:
-		cout << "Podaj a gdzie" << endl;
+		cout << "Podaj a" << endl;
 		cin >> a;
 		cout << "Podaj b" << endl;
 		cin >> b;
 		if (a == 0) {
-			cout << "Miejsce zerowe to " << b;
+			cout << "Brak miejsc zerowych" << b;
 
 		}
 		else {
 			if (b == 0)
 			{
-				cout << "równanie sprzeczne dla tej funckji" << endl;
+				cout << "Rownanie sprzeczne dla tej funkcji" << endl;
 			}
 			else
 			{
@@ -52,6 +52,40 @@ int main()
 		}
 		break;
 	case 2:
+		cout << "Podaj a" << endl;
+		cin >> a;
+		cout << "Podaj b" << endl;
+		cin >> b;
+		cout << "podaj c" << endl;
+		cin >> c;
+		if (a == 0) {
+		
+		
+		}
+		else {
+			if (b == 0) {
+				cout << "rownanie sprzeczne dla ax+b " << endl;
+				negb = -c;
+				y = a / negb;
+				cout << "Miejsce zerowe funkcji ax + by + c to " << y << endl;
+			}
+			else {
+
+				if (c == 0) {
+					negb = -b;
+					x = a / negb;
+					cout << "Miejsce zerowe funkcji ax^2 + bx + c to " << x << endl;
+					cout << "Miejsce zerowe funkcji ax+b to " << x << endl;
+				}
+				else {
+					negb = -b;
+					x = a / negb;
+					cout << "Miejsce zerowe funkcji ax+b to " << x << endl;
+
+					w = c / negb;
+					w = -w;
+					y = x / w;
+					cout << "Miejsce zerowe funkcji ax + by + c to " << y << endl;
 		break;
 	case 3:
 		break;
@@ -64,12 +98,6 @@ int main()
 
 /*
 	cout << " Oblilczanie miejsc zerowych funkcji ax+b, ax+by+c, ax^2+bx+c gdzie a=!0" << endl << endl;
-	
-	cout << "podaj c" << endl;
-	cin >> c;
-	
-
-	
 	
 	else {
 		if (b == 0) {
