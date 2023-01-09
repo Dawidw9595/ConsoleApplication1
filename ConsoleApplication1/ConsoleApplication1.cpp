@@ -5,7 +5,7 @@
 using namespace std;
 int main()
 {
-   //Napisz program obliczania miejsc zerowych funkcji liniowej postaci ax + b gdzie a≠0 (wer.1.0) 
+	//Napisz program obliczania miejsc zerowych funkcji liniowej postaci ax + b gdzie a≠0 (wer.1.0) 
 	float a;
 	float b;
 	float x;
@@ -15,11 +15,16 @@ int main()
 	cin >> a;
 	cout << "Podaj b" << endl;
 	cin >> b;
-	b = -b;
-	x = a / b;
+	if (a == 0) {
+		cout << "Miejsce zetowe to " << b;
 
-	cout << "Miejsce zerowe to " << x << endl;
+	}
+	else {
+		b = -b;
+		x = a / b;
 
+		cout << "Miejsce zerowe to " << x << endl;
+	}
 
 }
 
