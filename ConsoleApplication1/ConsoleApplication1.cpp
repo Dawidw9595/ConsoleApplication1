@@ -32,7 +32,8 @@ int main()
 		c = -c;
 		y = x / c;
 		cout << "Miejsce zerowe funkcji ax+b to " << x << endl;
-		cout << "Miejsce zerowe funkcji ax + by + c" << y << endl;
+		cout << "Miejsce zerowe funkcji ax + by + c to " << y << endl;
+
 	}
 
 	cout << endl;
