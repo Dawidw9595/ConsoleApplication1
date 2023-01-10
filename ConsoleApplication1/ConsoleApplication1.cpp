@@ -14,6 +14,9 @@ float pierwiastek = 0;
 float x1 = 0;
 float x2 = 0;
 int i = 0;
+int q;
+int w;
+int e;
 int przypadek = 0;
 void liniap1(float a, float b, float c)
 {
@@ -67,7 +70,7 @@ void liniap2(float a, float b, float c)
 
 	}
 }
-void kwadratp2(float a, float b, float c)
+void kwadratp1(float a, float b, float c)
 {
 	if (a == 0) {
 		delta = b * b;
@@ -139,6 +142,17 @@ void kwadratp2(float a, float b, float c)
 	}
 }
 
+void kwadratp2(float a, float b, float c)
+{
+	
+	q = a;
+	w = -2 * a * b;
+	e = (a * (b * b) + c);
+
+	kwadratp1(q,w,e);
+	
+}
+
 int main()
 {
 	setlocale(LC_CTYPE, "Polish");
@@ -181,6 +195,16 @@ int main()
 		cout << "podaj c" << endl;
 		cin >> c;
 		kwadratp2(a, b, c);
+		break;
+
+	case 4:
+		cout << "Podaj a" << endl;
+		cin >> a;
+		cout << "Podaj b" << endl;
+		cin >> b;
+		cout << "podaj c" << endl;
+		cin >> c;
+		kwadratp1(a, b, c);
 		break;
 
 
